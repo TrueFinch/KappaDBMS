@@ -1,7 +1,6 @@
 sudo: true
 dist: xenial
 language: cpp
-compiler: gcc
 
 addons:
   apt:
