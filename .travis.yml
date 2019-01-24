@@ -40,6 +40,7 @@ install:
   - pushd bison-3.2 && ./configure --prefix=/usr && make && sudo make install && popd
 
 script:
+  - export GITHUB_SECRET_TOKEN=[secure]
   - export CC=gcc-7
   - export CXX=g++-7
   - export GCOV=gcov-7
