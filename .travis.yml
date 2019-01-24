@@ -11,6 +11,9 @@ addons:
       - g++-7
       - cmake
 
+env:
+  - secure: "AjxowQIYCAHfOP2cYXYHBkKtM3UflKCiElT3b9Y20EbjVuITZ4OjKScGY5S5dz7+dPaAmuywc8ROJ/ohBI21OZZfVWX5yJmsb6ddLAcmZpOobWHB7SCkACP8CKyhe6luCjBN0Z+G2v4/E1Hp0wP2TBSq8psm6hxn7xIPBe2bbyEYzOJQLCfICvzZFw7OKbsbZQgfZMT5YVZZuTkb05fokQJSxyrRh43Fb0tXKj4g6/NC9KU9LphOdTP42qwMRICXTCVUwaVbyJaQjeEjYsCie0Ar1Oa17WGnNai8XaBp0QLll2KSadznZP8ivUaVRKZRwcpXvuYiG1TUfEn0rAPFcq89jp8BD5qKoWvRx40iDWOAHltj4VMeqK9ODkeUZudnyT8aIDe7DMsm4czzBSw7T00cUyMCMfpKn/gtaKSRHaBqEbfYTpgOnuNuSCgqzC7VqHYCzCSLVEOk96zUu0kKRWwqrS+6GdBEFIKGZob+lRs/3H3EgmcKTikOb2uJEfvqyeuuvzPh//r4899mKqBhMe2X367FQoLgmp9fvJKmDZm6BINDJZZw0qVoxUIkFWI+E2wmuH6Y7UanX1jTNNHYQcGxVdN7j/eXu+QGQWooMiv+Ehr/QgZJCZer76PlhOuBp0erK2k/Car+uh8ELrJOp50korsqBflc0chu+kLa5hE="
+
 matrix:
   fast_finish: true
 
