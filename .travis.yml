@@ -13,7 +13,8 @@ addons:
       - cmake
 
 env:
-  - secure: "0BiU3csFt1eKre754LtUdM4NmN2nqYc34F/a7XGzFXzP3sn8USfhq4elnOQDtSlDcfGFKEBrls06I2ytK88W41GBYNqZQITBIukOHS5cRbWFM2xeEMbgRDv+L1ynQWSqAAYR+76NxSxU2h4dLz7YN95WQev2aH396QCWXf/e0X4M0gjsdBUT6ZtsVYfI7h1FERY92Dkf9ShGkhplZeCkiHvBU2VQwO2E5pKlNp/SJp28ERXcgIGEI880/tAGoDqxAuco+ZIiqsq9Zni7r/ucBVoDRr2O6vF5hklhIfHl+/wIbY5Y8hgZB9nziyqJ4Vi27G8KnZufCCRvMY39KP9X6wmX5TjeFqRDhmWDFd1RWJ22ichr0Jx0zOGHwY5wrH/6OC48ukqH002u7QvzzGoMIPREw8W+5CjF8qTUbiybI73ie9ZIWaseGBeA+c0x6JNuoP89d2QOM818yT2I/hsFRhs4V/tkQfd3uROCxpsv+VOehF6zyXcVLyf2HvNZBQbrrR0qpm0hNnn3ApWSFntKStUZceZmiPjhKABgVpOfkZd/2u7WMbR7vfm2G2/bH/uJeMvbVMqMVrulA7hAMgLlmbi0S8F2j68j+NQjDH0EjOI/xp+1f0stz2fU5ewxIgs8S/V+Ue9EYrSPrMS21e16toBzyYCLoVk85/FUrxJcxrw="
+  #- secure: "0BiU3csFt1eKre754LtUdM4NmN2nqYc34F/a7XGzFXzP3sn8USfhq4elnOQDtSlDcfGFKEBrls06I2ytK88W41GBYNqZQITBIukOHS5cRbWFM2xeEMbgRDv+L1ynQWSqAAYR+76NxSxU2h4dLz7YN95WQev2aH396QCWXf/e0X4M0gjsdBUT6ZtsVYfI7h1FERY92Dkf9ShGkhplZeCkiHvBU2VQwO2E5pKlNp/SJp28ERXcgIGEI880/tAGoDqxAuco+ZIiqsq9Zni7r/ucBVoDRr2O6vF5hklhIfHl+/wIbY5Y8hgZB9nziyqJ4Vi27G8KnZufCCRvMY39KP9X6wmX5TjeFqRDhmWDFd1RWJ22ichr0Jx0zOGHwY5wrH/6OC48ukqH002u7QvzzGoMIPREw8W+5CjF8qTUbiybI73ie9ZIWaseGBeA+c0x6JNuoP89d2QOM818yT2I/hsFRhs4V/tkQfd3uROCxpsv+VOehF6zyXcVLyf2HvNZBQbrrR0qpm0hNnn3ApWSFntKStUZceZmiPjhKABgVpOfkZd/2u7WMbR7vfm2G2/bH/uJeMvbVMqMVrulA7hAMgLlmbi0S8F2j68j+NQjDH0EjOI/xp+1f0stz2fU5ewxIgs8S/V+Ue9EYrSPrMS21e16toBzyYCLoVk85/FUrxJcxrw="
+  - secure: "FgMMBxJS43S88ab4uspgssy2Oz7LOlkGPLmVrPYWlOKHn/7Eb4fKYKO1uiTGASuaelHZfXa0dGG1wetMsw3UtUB4I1JB1QkSK+uzD0KiGktNOO+cjFElZpFV/cUnDggWuIeVyA4OXDV0qoFDoqSETTKHM9t+vGDKGQ4edIITz1ra+UKkr7EV12F7vhvkd17hNN7iRVv1uhTc4nxN0z/3zQPuKJJmi4NSkmhFsUyioIyOT4hnjXOyUn+4lku2CeGG6kXfzutQNd6vXzFym/A7IC9mwX2ibHYsIDR5coruHk+7aXpVLnsJ3sGCp18GRwcagldDG/ir+YKp/oN12UnBV0YLbyXHrY+y8DWtky7ZS3zkCLsJgsWHW0tVHtnj0xFTtrui7HP5z/9Nu/ctsavKN8GqpjQR9yHhJqLoJCT6IQ2M3slYvW43S5cZDSq0XiAEmxSJ/NU0+qLnySuuA3aujlVLxcyRIxZhHfzaPY/gJzGHmJFHtJmoJsk3aLdS1OButuwDLSpbH/ZtxYwJBNNBYrsr4ofF106qr+WZpNd8J987egv7fnv0vVxVAFIMHX4dQpm5lKiAdvzSrw3cdZWLzn+wfVG8u0bKxTfClQHjnWVPEvxQcyA1Btpk5+h2DDXA9oonp/KWe5YW5omagcDyO5y276MHe8vywWAx41xk9DA="
 
 matrix:
   fast_finish: true
@@ -40,7 +41,7 @@ install:
   - pushd bison-3.2 && ./configure --prefix=/usr && make && sudo make install && popd
 
 script:
-  - export GITHUB_SECRET_TOKEN=[secure]
+  #- export GITHUB_SECRET_TOKEN=[secure]
   - export CC=gcc-7
   - export CXX=g++-7
   - export GCOV=gcov-7
